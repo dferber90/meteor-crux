@@ -53,4 +53,4 @@ No classes. Use factories. Build objects by combining modules.
 The MIT License (MIT)
 
 Copyright (c) 2014 Dominik Ferber
-See [LICENSE.txt](LICENSE.txt).
+See [LICENSE](LICENSE).
