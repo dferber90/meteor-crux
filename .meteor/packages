@@ -1,0 +1,26 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+coffeescript
+markdown
+iron:router
+app
+ui-harness-config
+accounts-base
+accounts-password
+accounts-ui
+
+teams
+ctrl-button
+ctrl-button-spec
+respondly:ui-harness
+
+
+autopublish
+site-team
+site-teams
+
+mike:pkgtest

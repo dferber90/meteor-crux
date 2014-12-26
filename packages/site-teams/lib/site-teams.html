@@ -1,0 +1,9 @@
+<template name="siteTeams">
+	<h2>Teams</h2>
+
+	<ul>
+	{{#each teams}}
+		<li><a href="{{pathFor route='team'}}">{{name}}</a></li>
+	{{/each}}
+	</ul>
+</template>
