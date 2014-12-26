@@ -21,9 +21,3 @@ Package.onUse(function(api) {
   api.addFiles('lib/site-team.html');
   api.addFiles(['lib/site-team.js'], 'client');
 });
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('site-team');
-  api.addFiles('site-team-tests.js');
-});

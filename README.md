@@ -1,8 +1,9 @@
 *THIS IS STILL BEING WORKED ON. DO NOT USE YET*.
 
-# Basic
+[![Build Status](https://travis-ci.org/dferber90/meteor-crux.svg?branch=master)](https://travis-ci.org/dferber90/meteor-crux)
 
-A Meteor projects where most problems are solved.
+# Basic
+A starting point for Meteor projects where most problems are solved.
 
 
 ## Developing
@@ -30,16 +31,21 @@ using phantomjs and reports the success through the exit code.
 ### chai
 
 
+### Travis CI
+[travis-ci](http://travis-ci.org).
+Tutorial on that is also included [here](Post: [here](http://practicalmeteor.com/testing-meteor-packages-command-line-travis-ci/#more-166).
 
 
 
-## Packages / Libraries
 
+## 3rd-party Packages / Libraries
 
 ### stampit
 No classes. Use factories. Build objects by combining modules.
 * [No classes (two pillars of js)](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3)
 * [github docs](https://github.com/ericelliott/stampit)
+
+
 
 
 ## Limitations

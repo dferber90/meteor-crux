@@ -26,8 +26,5 @@ Package.onTest(function (api) {
   ]);
   api.use('teams');
 
-  debugger;
-  console.log(api);
-
   api.addFiles('tests/teams.coffee');
 });

@@ -16,13 +16,13 @@ describe 'Teams', ->
     stubs.restoreAll
 
   beforeEach ->
-    spies.create('log', console, 'log')
+    stubs.create('log', console, 'log')
 
   it 'does something here', ->
     logStr = "wow"
     console.log logStr
     expect(true).to.equal(true)
-    expect(spies.log).to.have.been.calledWith(logStr)
+    expect(stubs.log).to.have.been.calledWith(logStr)
 
   ###
   it 'can access teamMembership', ->
@@ -31,15 +31,17 @@ describe 'Teams', ->
   
   afterEach ->
     spies.restoreAll
+    stubs.restoreAll
 
   afterAll ->
     spies.restoreAll
     stubs.restoreAll
 
-
+  ###
   describe 'nested describe', ->
     beforeAll ->
       console.log "hi"
 
     it 'exists', ->
       expect(true).to.equal(true)
+  ###

@@ -14,9 +14,3 @@ Package.onUse(function(api) {
     'lib/ctrl.coffee'
   ], 'client');
 });
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('ctrl');
-  api.addFiles('ctrl-tests.js');
-});
