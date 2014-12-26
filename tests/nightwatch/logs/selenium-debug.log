@@ -1,0 +1,42 @@
+15:03:51.432 INFO - Launching a standalone server
+15:03:51.494 INFO - Java: Sun Microsystems Inc. 23.25-b01
+15:03:51.494 INFO - OS: Linux 3.2.0-74-generic amd64
+15:03:51.529 INFO - v2.43.1, with Core v2.43.1. Built from revision 5163bce
+15:03:51.697 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+15:03:51.747 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+15:03:51.750 INFO - Version Jetty/5.1.x
+15:03:51.752 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+15:03:51.753 INFO - Started HttpContext[/selenium-server,/selenium-server]
+15:03:51.753 INFO - Started HttpContext[/,/]
+15:03:53.032 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@5f9c449f
+15:03:53.033 INFO - Started HttpContext[/wd,/wd]
+15:03:53.056 INFO - Started SocketListener on 0.0.0.0:4444
+15:03:53.057 INFO - Started org.openqa.jetty.jetty.Server@772edf9a
+15:03:53.496 INFO - Executing: [new session: Capabilities [{platform=ANY, javascriptEnabled=true, acceptSslCerts=true, browserName=phantomjs, name=Wow, phantomjs.binary.path=tests/nightwatch/lib/phantomjs}]])
+15:03:53.520 INFO - Creating a new session for Capabilities [{platform=ANY, javascriptEnabled=true, acceptSslCerts=true, browserName=phantomjs, name=Wow, phantomjs.binary.path=tests/nightwatch/lib/phantomjs}]
+15:03:53.531 INFO - executable: /media/sites/basic/tests/nightwatch/lib/phantomjs
+15:03:53.531 INFO - port: 22728
+15:03:53.531 INFO - arguments: [--webdriver=22728, --webdriver-logfile=/media/sites/basic/phantomjsdriver.log]
+15:03:53.532 INFO - environment: {}
+PhantomJS is launching GhostDriver...
+[INFO  - 2014-12-26T07:03:54.182Z] GhostDriver - Main - running on port 22728
+[INFO  - 2014-12-26T07:03:54.709Z] Session [5ac56df0-8ccd-11e4-a9ca-db5017eb1425] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2014-12-26T07:03:54.709Z] Session [5ac56df0-8ccd-11e4-a9ca-db5017eb1425] - page.customHeaders:  - {}
+[INFO  - 2014-12-26T07:03:54.709Z] Session [5ac56df0-8ccd-11e4-a9ca-db5017eb1425] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.8","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2014-12-26T07:03:54.710Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 5ac56df0-8ccd-11e4-a9ca-db5017eb1425
+15:03:54.796 INFO - Done: [new session: Capabilities [{platform=ANY, javascriptEnabled=true, acceptSslCerts=true, browserName=phantomjs, name=Wow, phantomjs.binary.path=tests/nightwatch/lib/phantomjs}]]
+15:03:54.853 INFO - Executing: [get: http://localhost:3000])
+15:03:55.210 INFO - Done: [get: http://localhost:3000]
+15:03:55.224 INFO - Executing: [find element: By.selector: body])
+15:03:55.350 INFO - Done: [find element: By.selector: body]
+15:03:55.356 INFO - Executing: [is displayed: 0 [[PhantomJSDriver: phantomjs on LINUX (5ac56df0-8ccd-11e4-a9ca-db5017eb1425)] -> css selector: body]])
+15:03:55.385 INFO - Done: [is displayed: 0 [[PhantomJSDriver: phantomjs on LINUX (5ac56df0-8ccd-11e4-a9ca-db5017eb1425)] -> css selector: body]]
+15:03:56.422 INFO - Executing: [find element: By.selector: h1])
+15:03:56.460 INFO - Done: [find element: By.selector: h1]
+15:03:56.472 INFO - Executing: [get text: 1 [[PhantomJSDriver: phantomjs on LINUX (5ac56df0-8ccd-11e4-a9ca-db5017eb1425)] -> css selector: h1]])
+15:03:56.535 INFO - Done: [get text: 1 [[PhantomJSDriver: phantomjs on LINUX (5ac56df0-8ccd-11e4-a9ca-db5017eb1425)] -> css selector: h1]]
+15:03:56.540 INFO - Executing: [delete session: 312a5405-1269-4ae7-9b79-5adee3b08b89])
+[INFO  - 2014-12-26T07:03:56.591Z] ShutdownReqHand - _handle - About to shutdown
+15:03:57.156 INFO - Done: [delete session: 312a5405-1269-4ae7-9b79-5adee3b08b89]
+15:03:57.196 INFO - Shutting down...
+15:03:57.199 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,localport=4444]

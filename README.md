@@ -30,6 +30,21 @@ using phantomjs and reports the success through the exit code.
 
 ### chai
 
+### nightwatch
+npm install -g nightwatch
+
+meteor run --production
+nightwatch --config tests/nightwatch/nightwatch.json --env default
+
+Tests run using phantomjs which is included as a binariy in tests/nightwatch/lib.
+https://github.com/beatfactor/nightwatch/wiki/Running-tests-in-PhantomJS
+
+Tests also use Selenium.
+There is currently an error in v2.44.0, so we use v2.43.1.
+https://github.com/beatfactor/nightwatch/issues/309
+https://code.google.com/p/selenium/issues/detail?id=8088
+
+
 
 ### Travis CI
 [travis-ci](http://travis-ci.org).
