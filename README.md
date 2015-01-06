@@ -27,22 +27,13 @@ Spacejam runs
 using phantomjs and reports the success through the exit code.
 
 ### mocha
+http://mochajs.org/
 
 ### chai
+http://chaijs.com/api/bdd/
 
-### nightwatch
-npm install -g nightwatch
-
-meteor run --production
-nightwatch --config tests/nightwatch/nightwatch.json --env default
-
-Tests run using phantomjs which is included as a binariy in tests/nightwatch/lib.
-https://github.com/beatfactor/nightwatch/wiki/Running-tests-in-PhantomJS
-
-Tests also use Selenium.
-There is currently an error in v2.44.0, so we use v2.43.1.
-https://github.com/beatfactor/nightwatch/issues/309
-https://code.google.com/p/selenium/issues/detail?id=8088
+### spacejelly
+npm install -g spacejelly
 
 
 
