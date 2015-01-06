@@ -16,6 +16,8 @@ check@1.0.3
 coffeescript@1.0.5
 ctrl-button@1.0.0
 ctrl-button-spec@1.0.0
+ctrl-short-form@1.0.0
+ctrl-short-form-specs@1.0.0
 ddp@1.0.13
 deps@1.0.6
 ejson@1.0.5

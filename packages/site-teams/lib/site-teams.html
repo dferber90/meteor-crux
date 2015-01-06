@@ -1,9 +1,19 @@
 <template name="siteTeams">
 	<h2>Teams</h2>
+	<a href="{{pathFor route='home'}}">Home</a>
 
 	<ul>
 	{{#each teams}}
 		<li><a href="{{pathFor route='team'}}">{{name}}</a></li>
+	{{else}}
+		<li>No teams yet.</li>
 	{{/each}}
 	</ul>
+
+	<h3>Add Team</h3>
+	<form>
+		<input type="text" name="team-name">
+		{{> ctrl type="ctrl-button" label="add team"}}
+	</form>
+
 </template>

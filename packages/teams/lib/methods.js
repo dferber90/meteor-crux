@@ -4,6 +4,13 @@ Meteor.methods({
 		check(name, String);
 		// check(this.userId, String);
 
+		if (name.length === 0) {
+			throw new Meteor.Error(
+				'team-no-name-given',
+				'No name was specified for the new team'
+			);
+		}
+
 		Teams.insert({
 			name: name,
 			admins: [this.userId],
