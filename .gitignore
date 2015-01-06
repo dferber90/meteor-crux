@@ -1,2 +1,3 @@
 phantomjsdriver.log
-tests/nightwatch/reports
+tests/spacejelly/reports
+tests/spacejelly/logs
