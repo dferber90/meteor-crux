@@ -20,6 +20,7 @@ ctrl-short-form@1.0.0
 ctrl-short-form-specs@1.0.0
 ddp@1.0.13
 deps@1.0.6
+dferber:ui-harness@1.0.11
 ejson@1.0.5
 email@1.0.5
 fastclick@1.0.2
@@ -71,7 +72,6 @@ respondly:ctrls-input@1.0.2
 respondly:ctrls-log@1.0.2
 respondly:data@1.0.1
 respondly:markdown@1.0.0
-respondly:ui-harness@1.0.11
 respondly:util@1.0.1
 retry@1.0.2
 richsilv:stampit@1.0.0

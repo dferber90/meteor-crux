@@ -16,7 +16,7 @@ Package.onUse(function(api) {
     'spacebars',
   	'http',
   	'respondly:ctrl',
-  	'respondly:ui-harness'
+  	'dferber:ui-harness'
   ]);
 
   api.use('respondly:util@1.0.1');

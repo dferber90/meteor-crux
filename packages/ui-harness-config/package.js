@@ -10,7 +10,7 @@ Package.onUse(function(api) {
   api.use([
     'standard-app-packages',
     'iron:router',
-    'respondly:ui-harness'
+    'dferber:ui-harness'
   ]);
 
   api.versionsFrom('1.0.1');

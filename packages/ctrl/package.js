@@ -7,7 +7,13 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.2');
-  api.use(['coffeescript', 'templating', 'http', 'respondly:ctrl', 'respondly:ui-harness']);
+  api.use([
+    'coffeescript',
+    'templating',
+    'http',
+    'respondly:ctrl',
+    'dferber:ui-harness'
+  ]);
   api.addFiles([
     'lib/exports.js',
     'lib/ctrl.html',

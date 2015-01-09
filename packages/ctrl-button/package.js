@@ -13,7 +13,7 @@ Package.onUse(function(api) {
   	'templating',
   	'http',
   	'respondly:ctrl',
-  	'respondly:ui-harness'
+  	'dferber:ui-harness'
   ]);
 
   api.addFiles([

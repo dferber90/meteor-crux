@@ -16,7 +16,6 @@ accounts-ui
 teams
 ctrl-button
 ctrl-button-spec
-respondly:ui-harness
 
 
 autopublish
@@ -26,3 +25,4 @@ site-teams
 mike:pkgtest
 ctrl-short-form
 ctrl-short-form-specs
+dferber:ui-harness

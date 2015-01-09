@@ -8,7 +8,6 @@ Package.describe({
 Package.onUse(function(api) {
   api.use(['standard-app-packages', 'iron:router']);
   api.versionsFrom('1.0.1');
-  api.use(['respondly:css-stylus']);
   api.addFiles([
   	'app.html',
   	'routes.js'

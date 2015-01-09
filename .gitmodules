@@ -1,0 +1,3 @@
+[submodule "packages/ui-harness"]
+	path = packages/ui-harness
+	url = git@github.com:dferber90/meteor-ui-harness.git
