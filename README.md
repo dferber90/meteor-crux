@@ -5,7 +5,6 @@
 # Basic
 A starting point for Meteor projects where most problems are solved.
 
-
 ## Developing
 > Everything is a package. No app code!
 
@@ -58,6 +57,14 @@ No classes. Use factories. Build objects by combining modules.
 * not exported methods of packages are not testable (not accessible from tests)
 	-> Possible workaround could be to store them in "private" var (would possibly result in namespace collisions)
 	-> but actually the tests should only care about the exported vars /public api
+
+## Resources
+
+
+### Considered for using
+* [Percolate Studio Development Guide](https://github.com/percolatestudio/development-guide/wiki)
+* [Reactive Join](https://github.com/englue/meteor-publish-composite)
+* [Examples for forms, core, tabs, logs, dialogs, reactive arrays](https://github.com/meteortemplates)
 
 
 
