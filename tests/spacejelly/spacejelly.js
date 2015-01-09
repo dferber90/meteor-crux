@@ -14,7 +14,7 @@ module.exports = {
 		"rootUrl": "http://localhost",
 		"port": 4096,
 		"mongoUrl": "",
-		"production": true,
+		"production": false,
 		"release": false,
 		"settings": false // Path of settings file. Runs meteor with --settings <settings>
 	},

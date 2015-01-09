@@ -1,10 +1,5 @@
-var defaultTimeout = 1000;
+require('../data/globals.js');
 
-var selectors = {
-	teamName: 'input[name=team-name]',
-	submitButton: 'button',
-	teamList: 'ul'
-};
 
 var testData = {
 	teamName: "Barfuß Bethlehem"
@@ -19,13 +14,13 @@ module.exports = {
 		data = browser.globals;
 
 	browser
-		.url(baseurl + data.paths.teams)
-		.waitForElementPresent('body', defaultTimeout)
-		.waitForElementVisible(selectors.teamName, defaultTimeout)
-		.setValue(selectors.teamName, testData.teamName)
-		.click(selectors.submitButton)
-		.pause(defaultTimeout / 2)
-		.assert.containsText(selectors.teamList, testData.teamName)
+		.url(baseurl + route.teams)
+		.waitForElementPresent('body', timing.timeout)
+		.waitForElementVisible(selectors.teams.name, timing.timeout)
+		.setValue(selectors.teams.name, testData.teamName)
+		.click(selectors.teams.submitButton)
+		.pause(timing.pause)
+		.assert.containsText(selectors.teams.list, testData.teamName)
 		.end();
 	}
 
