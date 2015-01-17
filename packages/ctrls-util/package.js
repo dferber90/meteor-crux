@@ -7,11 +7,24 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.2.1');
-  api.addFiles('ctrls-util.js');
-});
 
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('ctrls-util');
-  api.addFiles('ctrls-util-tests.js');
+  api.use([
+    'underscore',
+    'coffeescript'
+  ]);
+
+  api.addFiles([
+    'lib/util.js',
+    'lib/stamps/Stamps.js',
+    'lib/stamps/auto-run.js',
+    'lib/stamps/events.js',
+    'lib/classes/UserAgent.coffee'
+  ]);
+
+  api.addFiles([
+    'client/dom/browser.coffee'
+  ], 'client');
+
+  api.export('Stamps');
+  api.export('Util');
 });
