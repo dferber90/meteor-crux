@@ -46,5 +46,3 @@ describe 'Core', -> describe 'Ctrls', ->
       it '`long`', -> @ctrl().label(@lorem(10))
       it '`HTML`', -> @ctrl().label("<code>Hello</code> there")
       it '`markdown`', -> @ctrl().label('My *simple* `markdown`')
-
-    describe.section 'Hm', ->

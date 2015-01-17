@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'ctrl-short-form-specs',
+  name: 'ctrls-util',
   summary: ' /* Fill me in! */ ',
   version: '1.0.0',
   git: ' /* Fill me in! */ '
@@ -7,11 +7,11 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.2.1');
-  api.addFiles('ctrl-short-form-specs.js');
+  api.addFiles('ctrls-util.js');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('ctrl-short-form-specs');
-  api.addFiles('ctrl-short-form-specs-tests.js');
+  api.use('ctrls-util');
+  api.addFiles('ctrls-util-tests.js');
 });

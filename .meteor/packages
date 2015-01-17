@@ -1,3 +1,4 @@
+
 # Meteor packages used by this project, one per line.
 #
 # 'meteor add' and 'meteor remove' will edit this file for you,
@@ -6,23 +7,63 @@
 meteor-platform
 coffeescript
 markdown
-iron:router
-app
-ui-harness-config
 accounts-base
 accounts-password
 accounts-ui
 
+app
+
+#######################################################################
+#								Atmosphere
+#######################################################################
+iron:router
+
+
+
+#######################################################################
+#								Crux
+#######################################################################
+ui-harness-config
+
+
+
+#######################################################################
+#								Models
+#######################################################################
+
 teams
-ctrl-button
-ctrl-button-spec
 
+#######################################################################
+#							   Controls
+#######################################################################
 
-autopublish
+ctrl-common-style
+ctrls-input
+
+#######################################################################
+# 								Sites
+#######################################################################
+
 site-team
 site-teams
 
 mike:pkgtest
-ctrl-short-form
-ctrl-short-form-specs
+
+#######################################################################
+# 								Forked
+#######################################################################
+
+# from respondly
 dferber:ui-harness
+
+
+#######################################################################
+# 						only for development
+#######################################################################
+
+# so we can use Ctrl.fromElement in console
+# should be able to remove it later
+respondly:ctrl
+
+
+autopublish

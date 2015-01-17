@@ -4,6 +4,14 @@ sizeMap =
   'c-size-28': 'c-btn-small'
   'c-size-22': 'c-btn-mini'
 
+###
+ctrl-button
+ctrl-button-primary
+ctrl-button-large
+ctrl-button-block
+ctrl-button-caps
+###
+
 
 ###
 A standard button.

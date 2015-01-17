@@ -19,7 +19,7 @@ Package.onUse(function(api) {
   	'dferber:ui-harness'
   ]);
 
-  api.use('respondly:util@1.0.1');
+  api.use('respondly:util');
   api.use('respondly:css-common@1.0.1');
   api.use('respondly:css-stylus@1.0.3');
   api.use('respondly:markdown@1.0.0');
@@ -34,5 +34,5 @@ Package.onUse(function(api) {
   api.use('respondly:ctrls-log@1.0.2');
 
 
-  api.addFiles('ctrl-button-spec.coffee', ['client']);
+  api.addFiles('ctrl-button-spec.js', ['client']);
 });

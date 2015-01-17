@@ -1,11 +1,25 @@
 Template.siteTeams.events({
-	'submit form': function (e, t) {
-		e.preventDefault();
+	'submit form': function (event, instance) {
+		event.preventDefault();
 
-		var teamNameElement = t.find('input[name=team-name]');
+		var $submitButton = instance.$('button'),
+			submitButtonWidth = $submitButton.width();
+		$submitButton.width(submitButtonWidth);
+
+
+		var submitButtonCtrl = Ctrl.fromElement($submitButton);
+		var label = submitButtonCtrl.label();
+		submitButtonCtrl.label('Saving..');
+
+		var teamNameElement = instance.find('input[name=team-name]');
 
 
 		Teams.add(teamNameElement.value, function (err, res) {
+			setTimeout(function () {
+				submitButtonCtrl.label(label);
+				$submitButton.width('auto');
+			}, 600);
+
 			if (err) {
 				throw err;
 			}
@@ -13,4 +27,4 @@ Template.siteTeams.events({
 			teamNameElement.value = '';
 		});
 	}
-})
+});

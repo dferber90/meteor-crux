@@ -13,6 +13,15 @@ A starting point for Meteor projects where most problems are solved.
 Build components using `respondly:meteor-ctrl`, [docs](https://github.com/Respondly/meteor-ctrl/blob/master/docs/ctrls.md).
 Test them in development using UIHarness.
 
+### Controls
+Package Naming:
+Every package that contains a single control starts with `ctrl-`.
+Packages that contain multiple controls start with `ctrls-`.
+
+Control Names:
+The name of the controls themselves start with `ctrl-` if they are elementary controls. If they are parts of a larger compontent, then they start with that compontents name, e.g. `tweet-header`, `tweet-content`.
+
+
 ## Testing
 practicalmeteor:munit
 

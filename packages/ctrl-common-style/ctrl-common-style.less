@@ -1,0 +1,144 @@
+// http://codepen.io/frytyler/pen/jwlyI
+
+
+
+/*
+  Changes:
+    .btn => .ctrl-button
+*/
+
+@color-primary: #a1d36e;
+@color-secondary: #6ad1dd;
+@color-tertiary: #fc6e51;
+@color-quaternary: #48cfad;
+
+@color-link: rgba(105, 105, 105, 0.88);
+@color-border: rgba(105, 105, 105, 0.44);
+@color-border-active: rgba(105, 105, 105, 0.88);
+
+@input-padding-vertical: 12px;
+
+
+// #################################################
+//                    Global
+// #################################################
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: sub;
+}
+
+a {
+  color: @color-link;
+  transition: color .3s ease;
+}
+a:hover {
+  color: @color-tertiary;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f9f9f9;
+}
+
+
+// #################################################
+//                    Form Elements
+// #################################################
+
+input {
+  outline: none;
+}
+
+input[type=text] {
+  padding: (@input-padding-vertical - 1) 12px;
+  border: 1px solid @color-border;
+  border-radius: 3px;
+  font-size: 0.8125em;
+}
+
+input[type=text]:focus {
+  border-color: @color-border-active;
+}
+
+input[type=text].small {
+  padding: 6px 14px;
+}
+
+// #################################################
+//                    Buttons
+// #################################################
+
+.ctrl-button {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #f2f2f2;
+  border: 0;
+  border-radius: 3px;
+  font-size: 0.8125em;
+  color: #b9bcbc;
+  transition: background .3s ease, color .3s ease;
+}
+.ctrl-button:hover {
+  background: #e5e5e5;
+  color: #929797;
+}
+.ctrl-button.ctrl-button-primary {
+  background: @color-primary;
+  color: #fff;
+}
+.ctrl-button.ctrl-button-primary:hover, .ctrl-button.ctrl-button-primary.active {
+  background: #94cd5a;
+}
+.ctrl-button.ctrl-button-secondary {
+  background: @color-secondary;
+  color: #fff;
+}
+.ctrl-button.ctrl-button-secondary:hover, .ctrl-button.ctrl-button-secondary.active {
+  background: #55cbd8;
+}
+.ctrl-button.ctrl-button-tertiary {
+  background: @color-tertiary;
+  color: #fff;
+}
+.ctrl-button.ctrl-button-tertiary:hover, .ctrl-button.ctrl-button-tertiary.active {
+  background: #fc5938;
+}
+.ctrl-button.ctrl-button-quaternary {
+  background: @color-quaternary;
+  color: #fff;
+}
+.ctrl-button.ctrl-button-quaternary:hover, .ctrl-button.ctrl-button-quaternary.active {
+  background: #35c9a4;
+}
+.ctrl-button.ctrl-button-white {
+  background: #fff;
+}
+.ctrl-button.ctrl-button-white:hover {
+  background: #fafafa;
+}
+.ctrl-button.ctrl-button-grey {
+  background: #dddddd;
+}
+.ctrl-button.ctrl-button-grey:hover {
+  background: #cccccc;
+}
+.ctrl-button.ctrl-button-large {
+  padding: @input-padding-vertical 28px;
+}
+.ctrl-button.ctrl-button-caps {
+  text-transform: uppercase;
+}
+.ctrl-button.ctrl-button-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.ctrl-button[disabled] {
+  opacity: .7;
+}

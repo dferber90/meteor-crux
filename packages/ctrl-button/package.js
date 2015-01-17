@@ -12,12 +12,13 @@ Package.onUse(function(api) {
   	'coffeescript',
   	'templating',
   	'http',
+    'less',
   	'respondly:ctrl',
-  	'dferber:ui-harness'
+    'ctrl-common-style'
   ]);
 
   api.addFiles([
   	'ctrl-button.html',
-  	'ctrl-button.coffee'
+  	'ctrl-button.js'
   ], 'client');
 });
