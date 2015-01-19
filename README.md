@@ -8,6 +8,8 @@ A starting point for Meteor projects where most problems are solved.
 ## Developing
 > Everything is a package. No app code!
 
+## Data
+We use respondly's [model](https://github.com/Respondly/meteor-data/blob/master/docs/models.md).
 
 ## UI
 Build components using `respondly:meteor-ctrl`, [docs](https://github.com/Respondly/meteor-ctrl/blob/master/docs/ctrls.md).
