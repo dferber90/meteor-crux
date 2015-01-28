@@ -12,9 +12,10 @@ Template.siteTeams.events({
 		submitButtonCtrl.label('Saving..');
 
 		var teamNameElement = instance.find('input[name=team-name]');
+		var teamNameCtrl = Ctrl.fromElement(instance.find('input[name=team-name]'));
 
 
-		Teams.add(teamNameElement.value, function (err, res) {
+		Teams.add(teamNameCtrl.text(), function (err, res) {
 			setTimeout(function () {
 				submitButtonCtrl.label(label);
 				$submitButton.width('auto');
@@ -24,7 +25,7 @@ Template.siteTeams.events({
 				throw err;
 			}
 
-			teamNameElement.value = '';
+			teamNameCtrl.text('');
 		});
 	}
 });

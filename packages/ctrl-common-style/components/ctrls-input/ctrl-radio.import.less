@@ -1,0 +1,26 @@
+.ctrl-radio {
+
+  @ctrl-radio-width: 22px;
+
+  margin: 5px;
+
+  input[type=radio] {
+  	display: inline-block;
+  	width: @ctrl-radio-width;
+  	height: @ctrl-radio-width;
+  }
+
+  .ctrl-radio-label {
+    display: inline;
+    color: lighten(@color-font, 20%);
+
+    height: 22px;
+	line-height: 22px;
+	vertical-align: top;
+  }
+
+  .ctrl-radio-message {
+  	color: lighten(@color-font, 40%);
+  	margin-left: (@ctrl-radio-width * 1.5);
+  }
+}

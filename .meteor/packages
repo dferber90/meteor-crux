@@ -68,5 +68,6 @@ respondly:ctrl
 
 autopublish
 http
+ctrl-radio-group
 ctrl-example
 ctrl-example-spec

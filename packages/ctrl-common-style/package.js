@@ -10,5 +10,9 @@ Package.onUse(function(api) {
 	api.use([
 		'less'
 	]);
-	api.addFiles('ctrl-common-style.less');
+	api.addFiles([
+		'components/ctrls-input/ctrl-button.import.less',
+		'components/ctrls-input/ctrl-radio.import.less',
+		'ctrl-common-style.less'
+	]);
 });

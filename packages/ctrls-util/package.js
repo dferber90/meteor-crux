@@ -14,17 +14,21 @@ Package.onUse(function(api) {
   ]);
 
   api.addFiles([
+    /*
     'lib/util.js',
     'lib/stamps/Stamps.js',
     'lib/stamps/auto-run.js',
     'lib/stamps/events.js',
     'lib/classes/UserAgent.coffee'
+    */
+    'lib/Const.js'
   ]);
-
+/*
   api.addFiles([
     'client/dom/browser.coffee'
   ], 'client');
-
+*/
   api.export('Stamps');
   api.export('Util');
+  api.export('Const');
 });

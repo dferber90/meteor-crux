@@ -1,0 +1,28 @@
+<template name="ctrl-radio">
+  <div
+    class="ctrl-radio ctrl-form-element {{ cssClass }}"
+    data-value="{{ api.value }}"
+    tabindex="0"
+  >
+    <input
+      id="ctrl-radio-{{ uid }}"
+      type="radio"
+    >
+
+    {{#if api.label}}
+      {{#if isLabelCtrl}}
+        {{> ctrl type=api.label.tmpl data=api.label.data }}
+      {{else}}
+        <label class="ctrl-radio-label" for="ctrl-radio-{{ uid }}">{{ api.label }}</label>
+      {{/if}}
+    {{/if}}
+
+    {{#if api.message}}
+      {{#if isMessageCtrl}}
+        {{> ctrl type=api.message.tmpl data=api.message.data }}
+      {{else}}
+        <div class="ctrl-radio-message">{{{ api.message }}}</div>
+      {{/if}}
+    {{/if}}
+  </div>
+</template>

@@ -14,6 +14,11 @@
 	<form>
 		{{> ctrl type="ctrl-input-text" name="team-name"}}
 		{{> ctrl type="ctrl-button" label="Add Team"}}
+
+		{{! > ctrl type="ctrl-radio" label="Public Team" message="A public team can be joined by everyone"}}
+		{{! > ctrl type="ctrl-radio" label="Private Team" message="Only people you invite will be able to join this team. It can not be seen without an invitation."}}
+
+		{{> ctrl type="ctrl-radio-group"}}
 	</form>
 
 </template>

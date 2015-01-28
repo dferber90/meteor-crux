@@ -1,0 +1,89 @@
+.ctrl-button {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #f2f2f2;
+  border: 0;
+  border-radius: 3px;
+  font-size: 0.8125em;
+  color: #b9bcbc;
+  transition: background .3s ease, color .3s ease;
+
+  &:hover {
+    background: #e5e5e5;
+    color: #929797;
+  }
+
+  &.ctrl-button-primary {
+    background: @color-primary;
+    color: #fff;
+  }
+
+  &.ctrl-button-primary:hover,
+  &.ctrl-button-primary.active {
+    background: #94cd5a;
+  }
+
+  &.ctrl-button-secondary {
+    background: @color-secondary;
+    color: #fff;
+  }
+
+  &.ctrl-button-secondary:hover,
+  &.ctrl-button-secondary.active {
+    background: #55cbd8;
+  }
+
+  &.ctrl-button-tertiary {
+    background: @color-tertiary;
+    color: #fff;
+  }
+
+  &.ctrl-button-tertiary:hover,
+  &.ctrl-button-tertiary.active {
+    background: #fc5938;
+  }
+
+  &.ctrl-button-quaternary {
+    background: @color-quaternary;
+    color: #fff;
+  }
+
+  &.ctrl-button-quaternary:hover,
+  &.ctrl-button-quaternary.active {
+    background: #35c9a4;
+  }
+
+  &.ctrl-button-white {
+    background: #fff;
+  }
+
+  &.ctrl-button-white:hover {
+    background: #fafafa;
+  }
+
+  &.ctrl-button-grey {
+    background: #dddddd;
+  }
+
+  &.ctrl-button-grey:hover {
+    background: #cccccc;
+  }
+
+  &.ctrl-button-large {
+    padding: @input-padding-vertical 28px;
+  }
+
+  &.ctrl-button-caps {
+    text-transform: uppercase;
+  }
+
+  &.ctrl-button-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  &[disabled] {
+    opacity: .7;
+  }
+}

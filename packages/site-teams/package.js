@@ -12,8 +12,7 @@ Package.onUse(function(api) {
   	'teams',
   	'iron:router',
     'respondly:ctrl',
-    'ctrls-input',
-    'ctrl-button',
+    'ctrls-input'
   ]);
 
   api.use('site-team', {
