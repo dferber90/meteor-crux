@@ -1,0 +1,6 @@
+{
+	"name": "basic",
+	"scripts": {
+		"start": "meteor --settings settings.json"
+	}
+}

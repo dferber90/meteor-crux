@@ -67,3 +67,6 @@ respondly:ctrl
 
 
 autopublish
+http
+ctrl-example
+ctrl-example-spec

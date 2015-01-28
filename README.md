@@ -5,6 +5,11 @@
 # Basic
 A starting point for Meteor projects where most problems are solved.
 
+
+## Starting, stopping, everything else
+This project has a `package.json` file just so we can use the `npm start` and `npm run <x>` commands.
+See [here]().
+
 ## Developing
 > Everything is a package. No app code!
 
